@@ -151,6 +151,14 @@
             .catch(error => {
                 console.error('Hubo un problema con la solicitud:', error);
                 document.getElementById('content-container').innerHTML = `<p style="color: red; text-align: center;">Error al cargar el contenido. Por favor, revisa la consola para más detalles.</p>`;
+          });
+        }
+
+        // Llama a la función fetchData inicialmente para cargar la página
+        fetchData();
+
+        // Configura la actualización automática cada 5 minutos (300000 milisegundos)
+        setInterval(fetchData, 300000);
     </script>
 </body>
 </html>
