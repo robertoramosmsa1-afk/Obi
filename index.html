@@ -6,6 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <script>
+    function mostrarTamanioVentana() {
+            let ancho = window.innerWidth;
+            let alto = window.innerHeight;
+            console.log(`Ancho: ${ancho}px, Alto: ${alto}px`);
+        }
+
+        // Llamamos a la función
+        mostrarTamanioVentana();
+
+        // También podemos hacer que se actualice si la ventana cambia de tamaño
+        window.addEventListener('resize', mostrarTamanioVentana);
+       <script>
     <style>
         /* Estilos generales */
         body {
